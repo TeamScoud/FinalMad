@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Final</string>
+    <string name="textView">EDU SHARE</string>
+    <string name="txt">Subjects</string>
+    <string name="btn">Save</string>
+    <string name="btn1">Delete</string>
+    <string name="btn3">Update</string>
+    <string name="btn4">COUNT</string>
+    <string name="btn2">SEARCH</string>
+    <string name="button4">SEARCH TEACHERS</string>
+    <string name="btx">SHOW</string>
+    <string name="button">ADD APPOINMENTS</string>
+    <string name="btx1">SEARCH SUBJECTS</string>
+    <string name="BTX2">BACK</string>
+    <string name="st1">STUDENTS</string>
+
+    <string name="txt1">Appoinments</string>
+    <string name="textView2">Name  :</string>
+    <string name="textView3">Subject  :</string>
+    <string name="TextView">Date  :</string>
+    <string name="TextView5">Mode  :</string>
+    <string name="button2">COUNT</string>
+    <string name="buttton3">DELETE</string>
+
+    <string name="button6">SHOW</string>
+    <string name="textView4">ID :</string>
+    <string name="button5">SEARCH</string>
+    <string name="button7">DELETE</string>
+    <string name="button10">BACK</string>
+    <string name="button8">SEARCH</string>
+    <string name="textView6">Appoinments</string>
+    <string name="bt">UPDATE</string>
+
+    <array name="subjects">
+        <item>English</item>
+        <item>Mathematics</item>
+        <item>Science</item>
+        <item>Civics</item>
+        <item>Logic</item>
+    </array>
+
+    <array name="modes">
+        <item>ZOOM</item>
+        <item>MS Teams</item>
+
+    </array>
+    <array name="Teachers">
+        <item>Mrs.Damayanthi</item>
+        <item>Miss.Thilinika</item>
+        <item>Mr.Upul</item>
+        <item>Miss.Shrimali</item>
+        <item>Mr.Sadeeptha</item>
+        <item>Mr.Sadeepthika</item>
+        <item>Miss.Shrimalika</item>
+        <item>Mr.Shrimal</item>
+    </array>
+
+</resources>
