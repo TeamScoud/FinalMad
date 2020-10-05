@@ -32,7 +32,7 @@ public class MainActivity2 extends AppCompatActivity {
         btn4 = findViewById(R.id.btn4);
         btn2 = findViewById(R.id.btn2);
 
-        //
+        //define objects
         myDB = new DBHandler(this);
         button = findViewById(R.id.button);
 
@@ -55,7 +55,7 @@ public class MainActivity2 extends AppCompatActivity {
 
 
     }
-
+//add method
     public void addData(View view){
 
         DBHandler dbHandler = new DBHandler(this);
@@ -160,7 +160,7 @@ public class MainActivity2 extends AppCompatActivity {
 
     }
 
-
+//delete method
     public void deleteInfo1() {
 
         final DBHandler dbHandler = new DBHandler(this);
@@ -209,7 +209,7 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
     }
-
+//retrieve method
     public void ViewAll(){
 
         final DBHandler dbHandler = new DBHandler(this);

@@ -20,7 +20,7 @@ public class DBHandler_2 extends SQLiteOpenHelper {
     public DBHandler_2(Context context) {
         super(context, DATABASE_NAME, null, 1);
     }
-
+//create database
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
@@ -39,7 +39,7 @@ public class DBHandler_2 extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
     }
-
+//insert appoinment
     public long insertContact(String number, String subject, String date, String mode) { //
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -52,7 +52,7 @@ public class DBHandler_2 extends SQLiteOpenHelper {
         return newRowId;
 
     }
-
+//get appoinment count
     public int getcount1() {
         String query = "SELECT * FROM " + CONTACTS_TABLE_NAME;
         SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
@@ -61,7 +61,7 @@ public class DBHandler_2 extends SQLiteOpenHelper {
 
     }
 
-
+//delete appoinment
     public Integer deleteInfo1(String id){
 
         SQLiteDatabase sqLiteDatabase = getWritableDatabase();

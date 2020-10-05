@@ -32,7 +32,7 @@ public class Appoinments extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_appoinments);
 
-
+//define objects
         e1 = findViewById(R.id.e1);
         e11 = findViewById(R.id.e11);
         button = findViewById(R.id.button);
@@ -54,6 +54,7 @@ public class Appoinments extends AppCompatActivity {
             }
         });
 
+        //Getting date
         eText=(EditText) findViewById(R.id.editText1);
 
         ViewAll();
@@ -79,6 +80,7 @@ public class Appoinments extends AppCompatActivity {
             }
         });
     }
+    //add method
     public void addData(View view){
 
         DBHandler_2 dbHandler_2 = new DBHandler_2(this);
@@ -123,6 +125,7 @@ public class Appoinments extends AppCompatActivity {
 
     }
 
+    //Get Count method
     public void getcount1(View view) {
         DBHandler_2 dbHandler_2 = new DBHandler_2(this);
 
@@ -134,6 +137,8 @@ public class Appoinments extends AppCompatActivity {
             Toast.makeText(this, " Appoinments does not count Successfully", Toast.LENGTH_SHORT).show();
         }
     }
+
+    //Delete method
 
     public void deleteInfo1() {
 
@@ -164,6 +169,7 @@ public class Appoinments extends AppCompatActivity {
         //Toast.makeText(this, e1.getText().toString() + " Deleted Successfully", Toast.LENGTH_SHORT).show();
     }
 
+    //Update Method
 
     public void updateData1(){
 
@@ -184,6 +190,7 @@ public class Appoinments extends AppCompatActivity {
         });
     }
 
+    //View Method
     public void ViewAll(){
 
         final DBHandler_2 dbHandler_2 = new DBHandler_2(this);

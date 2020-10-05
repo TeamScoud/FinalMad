@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         button4 = findViewById(R.id.button4);
         button5 = findViewById(R.id.button5);
-
+//Calling teacher class
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

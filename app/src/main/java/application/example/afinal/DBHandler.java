@@ -45,6 +45,7 @@ public class DBHandler extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
     }
+    //Add subject
 
     public long addInfo(String subject) {
 
@@ -60,7 +61,7 @@ public class DBHandler extends SQLiteOpenHelper {
         return newRowId;
 
     }
-
+//retrieve subjects
     public List readAllInfo(String req) {
 
         SQLiteDatabase sqLiteDatabase = getReadableDatabase();
@@ -99,7 +100,7 @@ public class DBHandler extends SQLiteOpenHelper {
 
 
     }
-
+//delete subjects
     public void deleteInfo(String subject) {
 
         SQLiteDatabase sqLiteDatabase = getReadableDatabase();
@@ -107,7 +108,7 @@ public class DBHandler extends SQLiteOpenHelper {
         String[] selectionArgs = {subject};
         sqLiteDatabase.delete(TABLE_NAME, selection, selectionArgs);
     }
-
+//Update Subjects
     public int updateInfo(String subject) {
 
         SQLiteDatabase sqLiteDatabase = getReadableDatabase();
@@ -162,7 +163,7 @@ public class DBHandler extends SQLiteOpenHelper {
 
         return true;
     }
-
+//retrieve data
     public Cursor getAllData(){
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         Cursor res = sqLiteDatabase.rawQuery("select * from "+TABLE_NAME,null);

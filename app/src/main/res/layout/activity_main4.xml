@@ -38,14 +38,14 @@
         android:id="@+id/button6"
         android:layout_width="278dp"
         android:layout_height="44dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="164dp"
         android:background="@drawable/oval"
         android:text="ADD APPOINMENTS"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView3" />
 
@@ -53,7 +53,7 @@
         android:id="@+id/button7"
         android:layout_width="278dp"
         android:layout_height="44dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="224dp"
         android:background="@drawable/oval"
         android:text="MAKE A TEACHER LIST"
         android:textColor="#FFFFFF"
@@ -65,12 +65,12 @@
         app:layout_constraintTop_toTopOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/button11"
         android:layout_width="278dp"
         android:layout_height="44dp"
-        android:layout_marginTop="288dp"
+        android:layout_marginTop="284dp"
         android:background="@drawable/oval"
-        android:text="FIND A TEACHER"
+        android:text="ADD NOTES"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"

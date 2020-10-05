@@ -22,6 +22,7 @@ public class AppoinmentsSearch extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_appoinments_search);
 
+        //define objects
         e5 = findViewById(R.id.e5);
         button5 = findViewById(R.id.button5);
 
@@ -36,7 +37,7 @@ public class AppoinmentsSearch extends AppCompatActivity {
             }
         });
 
-//Today
+//Searching part
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
