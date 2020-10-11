@@ -1,26 +1,42 @@
 package application.example.afinal;
 
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import androidx.annotation.Nullable;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DBHandler_3 extends SQLiteOpenHelper {
 
-    public static final String DATABASE_NAME = "student.db";
-    public static final String TABLE_NAME = "student_table";
-    public static final String COL_1 = "ID";
-    public static final String COL_2 = "Notes";
+    private static final int DATABASE_VERSION = 1;
+    //Database Name
+    private static final String DATABASE_NAME = "student_database";
+    //Database Table name
+    private static final String TABLE_NAME = "STUDENT";
+    //Table columns
+    public static final String ID = "id";
+    public static final String NOTE = "name";
+
+    private SQLiteDatabase sqLiteDatabase;
+
+    //creating table query
+    private static final String CREATE_TABLE = "create table " + TABLE_NAME +"("+ID+
+            " INTEGER PRIMARY KEY AUTOINCREMENT," + NOTE + " TEXT NOT NULL)";
+    //Constructor
+
     public DBHandler_3(Context context) {
         super(context, DATABASE_NAME, null, 1);
-        SQLiteDatabase db = this.getWritableDatabase();
+
     }
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
-        sqLiteDatabase.execSQL("create table " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, Notes TEXT)");
+       // sqLiteDatabase.execSQL("create table " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, Notes TEXT)");
+        sqLiteDatabase.execSQL(CREATE_TABLE);
 
     }
 
@@ -31,4 +47,7 @@ public class DBHandler_3 extends SQLiteOpenHelper {
         onCreate (sqLiteDatabase);
 
     }
+
+
+
 }
